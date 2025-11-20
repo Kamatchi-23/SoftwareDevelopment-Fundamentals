@@ -9,7 +9,6 @@ class Admin(Student):
         super().__init__()
         self.std_list = Student().student_list
 
-###################################### Yashpreet part ###############################################
     def show_students(self):
         if self.std_list:
             for student in self.std_list:
@@ -49,9 +48,7 @@ class Admin(Student):
                     confirm = input("\t \033[1;31m Are you sure you want to clear the database (Y)ES/(N)O: \033[1;37m").lower()
         else:
             print("\t\t \033[1;37m < No Student Accounts exist in the Database >")
-#########################################################################################################
 
-####################################### Megha's part ####################################################
     def group_students(self):
         hd_lst, d_lst, p_lst, c_lst, z_lst, enrol_lst = [], [], [], [], [], []
         stud_list = deepcopy(self.std_list)
@@ -126,6 +123,3 @@ class Admin(Student):
                     self.admin_helpmenu()
             choice = input("\t \033[1;36m Admin Menu (c/g/p/r/s/x): \033[1;37m")
         print("\t \033[1;37m Back to University Menu")
-
-
-

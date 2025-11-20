@@ -1,4 +1,3 @@
-############################# Zagarsuren's part ###################################
 import random
 
 class Subject:

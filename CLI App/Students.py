@@ -2,7 +2,7 @@ import re
 from DataFile import Data
 from Subjects import Subject
 import random
-####################################### Kamatchi's part ########################################################
+
 class Student():
     def __init__(self) -> None:
         self.name = ""
@@ -158,9 +158,7 @@ class Student():
                 print(f"\t\t \033[1;31m Subject-{sub_id} not found in currently enrolled list of subjects")
         else:
             print("\t\t \033[1;31m There are no subjects currently enrolled")
-#################################################################################################################
 
-################################## Zagasuren's part #############################################################
     def enrol_subjects(self):
         if len(self.current_subjects) == 4:
             print("\t\t \033[1;31m Students are allowed to enrol in 4 subjects only.\033[0m")
@@ -185,9 +183,7 @@ class Student():
                 print(f"\t\t \033[1;37m [ Subject:: {subj["id"]} -- mark = {subj["marks"]} -- grade =  {subj["grade"]} ]")
         else:
             print("\t\t \033[1;33m Showing 0 subjects")
-#################################################################################################################
 
-####################################### Kamatchi's part #########################################################
     def student_helpmenu(self):
         print("\t \033[1;37m Student Menu Options: \n\t  (l) Login and access the student course menu \n\t  (r) Register for new students to gain system access \n\t  (x) Go back to University Menu")
     

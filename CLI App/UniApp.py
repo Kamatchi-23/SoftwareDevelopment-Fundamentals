@@ -1,4 +1,3 @@
-######################################### Megha's part ############################################
 from DataFile import Data
 from Students import Student
 from Admins import Admin
